@@ -4,7 +4,6 @@ import hello.jdbc.domain.Member;
 import hello.jdbc.repository.MemberRepositoryV1;
 import lombok.RequiredArgsConstructor;
 
-import java.nio.channels.IllegalChannelGroupException;
 import java.sql.SQLException;
 
 @RequiredArgsConstructor
