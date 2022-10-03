@@ -70,8 +70,8 @@ class MemberServiceV3_3Test {
 
     @Test
     void AopCheck() {
-        log.info("memberService class={}", memberService.getClass());
-        log.info("memberRepository class={}", memberRepository.getClass());
+        log.info("memberService class = {}", memberService.getClass());
+        log.info("memberRepository class = {}", memberRepository.getClass());
         assertThat(AopUtils.isAopProxy(memberService)).isTrue();
         assertThat(AopUtils.isAopProxy(memberRepository)).isFalse();
     }
