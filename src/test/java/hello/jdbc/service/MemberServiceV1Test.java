@@ -33,6 +33,13 @@ class MemberServiceV1Test {
         memberService = new MemberServiceV1(memberRepository);
     }
 
+    @AfterEach
+    void after() throws SQLException {
+        memberRepository.delete(MEMBER_A);
+        memberRepository.delete(MEMBER_B);
+        memberRepository.delete(MEMBER_EX);
+    }
+
     @Test
     @DisplayName("정상 이체")
     void accountTransfer() throws Exception {
